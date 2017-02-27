@@ -1,2 +1,2 @@
 # first_web_project
-personal profile
+it's a personal profile front-end web page.
