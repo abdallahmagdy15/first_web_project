@@ -5,6 +5,7 @@ body{
 background-color:white;
 margin: 30px 20px;
 box-shadow: 0px 0px 10px;
+height: 57pc;
 }
 
 #pro_pic{
@@ -17,12 +18,12 @@ position:relative;
 #name1{
 position:relative ;
 left:17px;
-top:7px;
+top:-8px;
 font-family: "Whitney SSm A", "Whitney SSm B", "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
 font-size:26px;
-text-shadow:0px -2px 5px ;
 color:white;
 letter-spacing: 5px;
+text-shadow: 0px 0px 8px;
 }
 #span1,#span2,#span3{
 font-size:20px;
@@ -38,8 +39,10 @@ font-family:'Josefin Sans', sans-serif;
     font-weight: bold;
 }
 p{
-position:relative;
-left:45px;
+transition: all 1s;
+backface-visibility: hidden;
+width: 23pc;
+word-wrap: break-word;
 }
 #header {
          position: fixed;
@@ -53,6 +56,7 @@ left:45px;
     border-top-left-radius: 49%;
     border-top-right-radius: 49%;
     background-color: #04aecb;
+    z-index: 1;
 }
 #links {
     height: auto;
@@ -80,7 +84,7 @@ left:45px;
     font-family: 'raleway';
 }
 #title2{
-    width:145px;
+    width:192px;
 }
 #title3{
      width:190px;
@@ -95,7 +99,7 @@ left:45px;
      font-family: 'Cairo';
      font-size: 37px;
      position: relative;
-     left: -8px;
+     left: 11px;
      bottom: 17px;
 }
 
@@ -105,7 +109,6 @@ li,p{
     color: #4c565a;
     font-weight: bold;
     position: relative;
-    right: 24px;
     }
     
 #searchInput{
@@ -118,35 +121,44 @@ li,p{
 #containerOfSearch{
     background-color: #04aecb;
     position: relative;
-    top: 54px;
+    top: 8px;
     width: 380px;
     right: 40px;
     height: 60px;
 }
 #edit{
-    font-size: 17px;
-    background-color: #dedede;
-    border: 0px;
-    box-shadow: -3px 0px 0px;
-    top: 4px;
-    height: 35px;
-    width: 3pc;
+font-size: 17px;
+background-color: #dedede;
+border: 0px;
+box-shadow: -3px 0px 0px;
+height: 35px;
+width: 3pc;
+margin-left: 10pc;
+position: absolute;
+bottom: 168px;
+transition: all .5s;
 }
 #span3{
     padding: 0px 40px;
 }
 #textarea{
     position: absolute;
-    top: 32pc;
-    right: 54pc;
-    width: 19pc;
-    border-color: #289F9F;
-    border-width: 2px;
-    border-style: dashed;
-    font-size: 17px;
-    padding: 0px 15px;
-    display: none;
-    float: left;
+top: 31pc;
+right: 58pc;
+width: 19pc;
+border-color: #289F9F;
+border-width: 2px;
+border-style: dashed;
+font-size: 17px;
+padding: 0px 15px;
+float: left;
+height: 5pc;
+transition: all 1s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    resize: none;
+    
 }
 #sub_search{
     position: relative;
@@ -160,26 +172,18 @@ li,p{
 }
 #resultsOfSearch{
     height: 32pc;
-    width: 29pc;
-    background-color: #fafdff;
-    position: absolute;
-    bottom: 0pc;
-    right: 410px;
-    float: left;
-    box-shadow: 0px 0px 13px;
-    border-style: dashed;
-    border-color: #7264cf;
-    visibility: hidden;
-    padding-left: 25px;
-    overflow: auto;
-}
-#exitResults{
-    height: 30px;
-    width: 30px;
-    position: relative;
-    bottom: 30pc;
-    right: 7pc;
-    visibility: hidden;
+width: 29pc;
+background-color: #fafdff;
+position: absolute;
+bottom: -33pc;
+right: -47px;
+float: left;
+box-shadow: 0px 0px 13px;
+border-style: dashed;
+border-color: #7264cf;
+opacity: 0.0;
+padding-left: 25px;
+overflow: auto;
 }
 #change_photo{
     position: absolute;
@@ -188,16 +192,17 @@ li,p{
     top: 8pc;
     left: 8pc;
     display: none;
+    transition: all .5s;
 }
 #footer {
-    text-align: center;
-    background-color: #4c565a;
-    height: 1pc;
-    padding: 40px;
-    color: #b7b8b9;
-    width: 15pc;
-    left: 936px;
-    position: relative;
+   text-align: center;
+background-color: #4c565a;
+padding: 25px;
+color: #b7b8b9;
+width: 15pc;
+position: absolute;
+top: 53pc;
+margin-left: 19px;
 }
 #d-line1,#d-line2,#d-line3 {
     background-color: #04aecb;
@@ -213,16 +218,17 @@ li,p{
     top: 8px;
 }
 #drawingPage{
-    background-image: url('http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218089/Cover_bdywfl.jpg');
-    background-position: -3px -85px;
-    height: 50px;
-    right: -45px;
-    text-align: center;
-    color: black;
-    font-size: 18px;
-    padding-top: 17PX;
-    position: absolute;
-    width: 20pc;
+   background-image: url('img/cover.jpg');
+background-position: -3px -85px;
+height: 50px;
+right: -52px;
+text-align: center;
+color: black;
+font-size: 18px;
+padding-top: 17PX;
+position: absolute;
+width: 311px;
+bottom: -177px;
 }
 #not_connected {
     top: -6px;
@@ -238,4 +244,19 @@ li,p{
     display: block;
 width: 27pc;
 margin-bottom: 7px;
+}
+#linefooter {
+    height: 2px;
+width: 290px;
+background-color: #4c565a;
+margin-left: 19px;
+bottom: -13pc;
+position: absolute;
+}
+#cover {
+    background: url('img/background-Cover.jpg');
+background-size: 34pc 50%;
+background-repeat: repeat-y;
+background-position-x: 27pc;
+height: 57pc;
 }

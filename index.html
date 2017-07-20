@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="parent">
-
+    <div id="cover">
     <div id="span1">
     <div id="d-line1"></div>
     <div class="programming skills"><h2 id="title1" class="programming programmer" >Programming Skills</h2>
@@ -25,7 +25,7 @@
         <div id="d-line2"></div>
     <div class="bio biography"><h2 id="title2">Biography</h2>
     <textarea id="textarea"></textarea>
-    <p class="all_texts">Programming 💻 , Gym 💪 , Drawing 🎨 .</p></div>
+    <p class="all_texts" id="bio">Programming 💻 , Gym 💪 , Drawing 🎨 .</p></div>
     <button id="edit">Edit</button>
     </Div>
     <div id="span3">
@@ -33,21 +33,20 @@
     <div class="personal info information"><h2 id="title3">Personal info.</h2><br>
     <label class="label1"> University : </label><label class="label2">K.F.S University</label><br>
     <label class="label1">College : </label><label class="label2">F.C.I.</label><br>
-    <label class="label1">Age : </label><label class="label2">soon 19 Y 🕺..</label><br>
+    <label class="label1">Age : </label><label class="label2">19 Y 🕺</label><br>
     </div>
     </div>
     <div id="header">
-    <img id="pro_pic" src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218116/pic2_ahjajl.jpg" alt="pic">
+    <img id="pro_pic" src="img/pic2.jpg" alt="pic">
     <div id="div_change_photo">
-        <img src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218088/changePhoto_qvsvpz.png" alt="change photo icon" id="change_photo" name="">
+        <img src="img/changePhoto.png" alt="change photo icon" id="change_photo" name="">
         <input type="file" id="file_browser" style="display: none">
     </div>
-    <label id="name1">Abdallah Magdy</label>
+    <h1 id="name1">Abdallah Magdy</h1>
     <div id="containerOfSearch">
     <input type="search" name="search_" id="searchInput" placeholder="search">
     <button id="sub_search" name="sub_search">🔍</button>
     <div id="resultsOfSearch"></div>
-    <button id="exitResults" name="exitResults">❌</button>
     </div>
     </div>
     <div id="links">
@@ -56,29 +55,31 @@
         </span>
         <ul type=none id="ul_links">
             <li>
-                <a href="www.facebook.com/abdallah.magdy15/">
-            <img src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218090/f_fttbfe.png" title="facebook"  class="social">
+                <a  target="_blank" href="https://www.facebook.com/abdallah.magdy15/">
+            <img id="fLink" src="img/f.png" title="facebook"  class="social"></a>
             </li>
             <li>
-                <a href="www.instagram.com/abdallah_magdyy/">
-                <img src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218095/insta_nlv6sr.png"  title="instagram"  class="social">
+                <a target="_blank"  href="https://www.instagram.com/abdallah_magdyy/">
+                <img id="iLink" src="img/insta.png"  title="instagram"  class="social"></a>
             </li>
             <li>
-                <a href="https://twitter.com/2ad629fe6a9948e">
-                    <img src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218095/twitter_mbul60.png" title="twitter" class="social"></a>
+                <a  target="_blank" href="https://twitter.com/2ad629fe6a9948e/">
+                    <img id="tLink" src="img/twitter.png" title="twitter" class="social"></a>
             </li>
-            <li><a href="https://www.instagram.com/kfs.arts.drawings/" target="_blank"> <div id="drawingPage">My Drawing Page on instagram</div></a></li>
+            <li><a href="https://www.instagram.com/kfs.portraits/" target="_blank"> <div id="drawingPage" >My Drawing Page on instagram</div></a></li>
         </ul>
     </div>
+    <div id="linefooter"></div>
     <div id="footer">
-        <span> ©️ 2017 Task to be uploaded in Github website.</span>
+        <span> ©️ 2017 Student at KFS University F.C.I .</span>
         <button id="not_connected"></button>
     </div>
     <div style="display: none" class="drawing drawings portrait art" id="div_portrait">
-        <img class="portrait" src="p1.jphttp://res.cloudinary.com/ddtoojz5z/image/upload/v1488218099/p1_owriwa.jpgg">
-        <img class="portrait" src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218095/p2_ay1add.jpg">
-        <img class="portrait" src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218106/p3_whpicb.jpg">
-        <img class="portrait" src="http://res.cloudinary.com/ddtoojz5z/image/upload/v1488218112/p4_ggzfx1.jpg">
+        <img class="portrait" src="img/p1.jpg">
+        <img class="portrait" src="img/p2.jpg">
+        <img class="portrait" src="img/p3.jpg">
+        <img class="portrait" src="img/p4.jpg">
+    </div>
     </div>
 </div>
 <script src="Main.js" ></script>
