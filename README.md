@@ -1,2 +1,2 @@
-# first_web_project
-it's a personal profile front-end web page.
+# my first website
+extract the "img.rar" beside the files.
